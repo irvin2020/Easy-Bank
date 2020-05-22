@@ -62,6 +62,9 @@ body {
     padding-bottom: .7em;
     transition: all .3s ease;
 }
+.header__logo {
+    cursor: pointer;
+}
 .header__nav--toggle {
     right: 0;
 }
