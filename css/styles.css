@@ -25,7 +25,8 @@ body {
 }
 /*--- --- --- --- Estilos del header --- --- --- ---*/
 .header,
-.hero {
+.hero,
+.choose {
     display: grid;
     grid-template-columns: 1fr 87% 1fr;
 }
@@ -100,6 +101,7 @@ body {
 .hero__content {
     text-align: center;
     grid-column: 2 / 3;
+    margin-bottom: 5.5em;
 }
 .hero__title {
     font-size: 2.4em;
@@ -119,6 +121,44 @@ body {
     color: var(--white);
     padding: .9em 2.5em;
     border-radius: 100px;
+}
+/*--- --- --- --- Estilos del choose --- --- --- ---*/
+.choose {
+    background-color: var(--lightGrayishBlue);
+    padding-top: 4.5em;
+}
+.choose__wrap {
+    text-align: center;
+    grid-column: 2 / 3;
+}
+.choose-description__title {
+    font-size: 2em;
+    font-weight: 300;
+    color: var(--darkBlue);
+    margin-bottom: .5em;
+}
+.choose-description__paragraph {
+    font-size: .9em;
+    color: var(--grayishBlue);
+    line-height: 1.7em;
+    margin-bottom: 4.5em;
+}
+.choose-card {
+    margin-bottom: 3.3em;
+}
+.choose-card__img {
+    margin-bottom: 1.5em;
+}
+.choose-card__title {
+    font-size: 1.15em;
+    color: var(--darkBlue);
+    font-weight: 400;
+    margin-bottom: 1.2em;
+}
+.choose-card__paragraph {
+    font-size: .9em;
+    color: var(--grayishBlue);
+    line-height: 1.7em;
 }
 @media (min-width: 1200px){
     .header,
@@ -150,6 +190,7 @@ body {
     .banner {
         background-image: url(../images/bg-intro-desktop.svg);
         background-position: left bottom;
+        background-size: auto;
         grid-area: banner;        
         overflow: hidden;
     }
